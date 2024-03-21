@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <title>My Protfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Abbas Bachir</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo"> Abbas Bachir</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="assets/profile-pic.png" alt="Abbas Bachir Profile Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hallo ich bin</p>
+            <h1 class="title">Abbas Bachir</h1>
+            <p class="section_text_p2">Das mache ich</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-1" 
+                    onclick="window.open('./assets/Lebenslauf.pdf')">
+                    Lebenslauf
+                </button>
+                <button class="btn btn-color-2" 
+                    onclick="location.href='.#contact'">
+                    Kontakt
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="assets/linkedin.png" alt="LinkedIn Profil"
+                    class="icon" onclick="window.open('https://linkedin.com')">
+                <img src="assets/github.png" alt="GitHub Profil"
+                    class="icon" onclick="window.open('https://github.com')">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get to know me</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img class="about-pic" src="assets/about-pic.png" alt="Profile Picture">
+            </div>
+            
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img class="icon" src="assets/experience.png" alt="expreience Icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br/> Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img class="icon" src="assets/education.png" alt="Education Icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree <br/> Data Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                        reprehenderit et laborum, rem, dolore eum quod voluptate
+                        exercitationem nobis, nihil esse debitis maxime facere minus sint
+                        delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                        Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                        reiciendis ea magnam? Nulla, impedit fuga!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p1">Explore my</p>
+        <h1 class="title">Expreience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Expreienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Expreienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Expreienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Expreienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Expreienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse through my</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/project-1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 1</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn"
+                                onclick="window.open('https://github.com')">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-1 project-btn"
+                                onclick="window.open('https://github.com')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/project-2.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 2</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn"
+                                onclick="window.open('https://github.com')">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-1 project-btn"
+                                onclick="window.open('https://github.com')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/project-3.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 3</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn"
+                                onclick="window.open('https://github.com')">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-1 project-btn"
+                                onclick="window.open('https://github.com')">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">How to</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="Email Icon" 
+                    class="icon contact-icon">
+                <p>
+                    <a href="mailto:abbas.bachir@hotmail.de">
+                        abbas.bachir@hotmail.de
+                    </a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="Email Icon" 
+                    class="icon contact-icon">
+                <p>
+                    <a href="mailto:abbas.bachir@hotmail.de">
+                        anderes
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copywrite &#169 2024 Abbas Bachir. All rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
