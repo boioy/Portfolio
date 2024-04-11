@@ -26,6 +26,13 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+    border-radius: 100rem;
+}
+.profile-pic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20rem;
 }
 
 .section_text{
@@ -196,12 +203,12 @@ article .icon{
 
 .contact-info-upper-container{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     border-radius: 2rem;
     border: rgb(163, 163, 163) 0.1rem solid;
     background-color: whitesmoke;
     margin: 2rem auto;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
 }
 
 .contact-info-container{

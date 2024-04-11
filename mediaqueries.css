@@ -71,6 +71,8 @@
         gap: 0.5rem;
         text-align: center;
     }
+
+    /*TODO für Handy anpassen*/
     .section_pic-container{
         width: auto;
         height: 50vw;
